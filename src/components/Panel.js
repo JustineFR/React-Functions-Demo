@@ -13,7 +13,7 @@ function Panel(props) {
     <div>
       <Display value={count}/>
       <Controls change={changeCount}/>
-      <button className="btn-type">{props.type}</button>
+      <button onClick={() => props.math(count)} className="btn-type">{props.type}</button>
     </div>
   )
 }
