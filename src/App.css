@@ -5,15 +5,15 @@
 .main-display {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 100px 0;
 }
 
 .display {
-  width: 80px;
+  width: 100px;
   font-weight: bold;
   margin-bottom: 10px;
-  background-color: black;
-  color: #fff;
+  background-color: rgb(22, 24, 23);
+  color: rgb(54, 190, 243);
 }
 
 .panel-container {

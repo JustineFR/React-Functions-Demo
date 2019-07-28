@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Display from './Display';
 import Controls from './Controls';
 
 function Panel(props) {
+  const [count, setCount] = useState(0);
+
+  const changeCount = direction => {
+    setCount(count + direction);
+  };
+
   return (
     <div>
-      <Display />
-      <Controls />
-      <button className="btn-type">{props.type}</button>
+      <Display value={count}/>
+      <Controls change={changeCount}/>
+      <button onClick={() => props.math(count)} className="btn-type">{props.type}</button>
     </div>
   )
 }
